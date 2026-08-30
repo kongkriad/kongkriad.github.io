@@ -1,1 +1,29 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== Custom Global Styles ========== */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-950 text-gray-100 antialiased;
+  }
+
+  /* เลือก font ที่ชอบ (ตัวอย่างใช้ Inter) */
+  body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* ========== Custom Utilities ========== */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
